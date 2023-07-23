@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" type="module"></script>
     <title>M1-S07-EXE07</title>
+    <style>
+        header,
+        main {
+            margin: 0px auto;
+            width: 230px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>M1-S07-EXE07</h1>
-    <h2>Abra o console para verificar o exercício</h2>
+    <header>
+        <h1>M1-S07-EXE07</h1>
+    </header>
+    <main>
+        <form id="form-login">
+            <input type="email" name="email" id="input-email" placeholder="e-mail" required/>
+            <input type="password" name="password" id="input-senha" placeholder="senha" required/>
+            <button type="submit">Acessar</button>
+        </form>
+        <p id="mensagem">Faça login.</p>
+    </main>
 </body>
+
 </html>
